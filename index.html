@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="start">
+        Let's check how old are you?
+        <br />
+        Type your name & date of birth
+      </div>
+      <br />
+
+      <form class="input-group mb-3 col-6">
+        <input type="text" class="name form-control" value="your name" />
+        <input type="date" class="form-control dateofbirth" id="datePickerId" />
+        <button type="submit" class="btn btn-primary">Посчитать возраст</button>
+      </form>
+    </div>
+    <div class="yearsAlert"></div>
+    <div class="daysToBirthdayAlert"></div>
+    <script src="index.js"></script>
+  </body>
+</html>

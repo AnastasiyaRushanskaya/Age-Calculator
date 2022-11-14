@@ -1,0 +1,49 @@
+.btn-primary {
+  margin-left: 3px;
+}
+.start {
+  font-size: 20px;
+  padding-left: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.yearsAlert,
+.daysToBirthdayAlert {
+  text-align: center;
+}
+
+.spanYearsAlert {
+  font-size: 20px;
+  overflow: hidden;
+  opacity: 0;
+  animation: yearsAlertAnimation 3s forwards;
+}
+
+@keyframes yearsAlertAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    color: rgb(70, 156, 70);
+    opacity: 1;
+  }
+}
+
+.spanDaysToBirthdayAlert {
+  overflow: hidden;
+
+  font-size: 16px;
+  opacity: 0;
+  animation: daysToBirthdayAlert 3s forwards;
+}
+
+@keyframes daysToBirthdayAlert {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: rgb(71, 35, 231);
+  }
+}
