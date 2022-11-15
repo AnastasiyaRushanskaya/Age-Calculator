@@ -1,49 +1,33 @@
-.btn-primary {
-  margin-left: 3px;
-}
-.start {
-  font-size: 20px;
-  padding-left: 20px;
-  margin-top: 40px;
-  text-align: center;
+body {
+  background-color: rgb(240, 244, 247);
 }
 
-.yearsAlert,
-.daysToBirthdayAlert {
-  text-align: center;
+.spanYearsAlert,
+.spanDaysToBirthdayAlert {
+  overflow: hidden;
+  opacity: 0;
+  animation: AlertAnimation 3s forwards;
+}
+
+@keyframes AlertAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .spanYearsAlert {
-  font-size: 20px;
-  overflow: hidden;
-  opacity: 0;
-  animation: yearsAlertAnimation 3s forwards;
-}
-
-@keyframes yearsAlertAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    color: rgb(70, 156, 70);
-    opacity: 1;
-  }
+  color: rgb(8, 199, 81);
+  font-size: 24px;
 }
 
 .spanDaysToBirthdayAlert {
-  overflow: hidden;
-
-  font-size: 16px;
-  opacity: 0;
-  animation: daysToBirthdayAlert 3s forwards;
+  color: rgb(24, 24, 238);
+  font-size: 20px;
 }
 
-@keyframes daysToBirthdayAlert {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    color: rgb(71, 35, 231);
-  }
+.error {
+  color: red;
 }

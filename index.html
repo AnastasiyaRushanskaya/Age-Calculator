@@ -10,21 +10,23 @@
   </head>
   <body>
     <div class="container">
-      <div class="start">
-        Let's check how old are you?
-        <br />
-        Type your name & date of birth
-      </div>
-      <br />
+      <h1 class="text-center mt-3">Let's check how old are you?</h1>
 
-      <form class="input-group mb-3 col-6">
-        <input type="text" class="name form-control" value="your name" />
+      <h4 class="text-center mb-3">Type your name & date of birth</h4>
+    </div>
+
+    <div class="container col-lg-6 col-md-12 pt-3">
+      <form class="input-group">
+        <input type="text" class="name form-control" placeholder="your name" />
         <input type="date" class="form-control dateofbirth" id="datePickerId" />
-        <button type="submit" class="btn btn-primary">Посчитать возраст</button>
+        <button type="submit" class="btn btn-primary ml-3">
+          calculate age
+        </button>
       </form>
     </div>
-    <div class="yearsAlert"></div>
-    <div class="daysToBirthdayAlert"></div>
+    <div class="error text-center"></div>
+    <div class="yearsAlert text-center py-3"></div>
+    <div class="daysToBirthdayAlert text-center"></div>
     <script src="index.js"></script>
   </body>
 </html>
